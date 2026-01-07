@@ -1,0 +1,30 @@
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+   border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     background-image: url('../img/hdbg.jpg');
+      background-size: cover;
+      color: white;
+}
+.header-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo-box{
+    cursor: pointer;
+    width: 80px;
+    img{
+        width: 100%;
+    }
+}
+.calculate-box{
+    cursor: pointer;
+}

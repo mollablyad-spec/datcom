@@ -1,0 +1,226 @@
+.main-image{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+.main-title{
+    h1{
+        font-weight: 600;
+        text-align: left;
+    }
+    p{
+        text-align: left;
+    }
+}
+.main-btn{
+    padding: 10px 15px;
+    font-size: 20px;
+      background-image: url('../img/button2.jpg');
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+      font-weight: 800;
+      color: red;
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+}
+
+.why-me{
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.why-title{
+    h1{
+        text-align: center;
+        font-weight: 600;
+    }
+}
+
+.why-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .why-box{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        gap: 10px;
+      background-image: url('../img/nycart.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      h1{
+        font-size: 20px;
+        padding: 0 10px;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 600;
+      }
+     p{
+        font-size: 14px;
+        padding-left: 25px;
+        padding-right: 15px;
+        color: rgba(0, 0, 0, 0.511);
+        
+     }
+       
+        
+    }
+}
+
+
+.container-calculated{
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    h3{
+        text-align: center;
+    }
+}
+
+.calc-input-box{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   input[type="range"] {
+       -webkit-appearance: none;
+       appearance: none;
+       width: 100%;
+       height: 4px;
+       background: #000000; 
+       border-radius: 2px;
+       cursor: pointer;
+
+       
+       &::-webkit-slider-runnable-track {
+           background: #e02211;
+           height: 4px;
+           border-radius: 2px;
+       }
+
+       // TRACK - Firefox
+       &::-moz-range-track {
+           background: #f33535;
+           height: 4px;
+           border-radius: 2px;
+       }
+
+       // THUMB (düymə) - Chrome, Safari, Edge
+       &::-webkit-slider-thumb {
+           -webkit-appearance: none;
+           appearance: none;
+           width: 18px;
+           height: 18px;
+           border-radius: 50%;
+           background: #ee1400; // 🔑 parlaq qızılı düymə
+           border: 2px solid #fcfcfc; // tünd qızılı kontur
+           cursor: pointer;
+           margin-top: -7px; // xəttin ortasına salmaq üçün
+       }
+
+       // THUMB - Firefox
+       &::-moz-range-thumb {
+           width: 18px;
+           height: 18px;
+           border-radius: 50%;
+           background: #FFD700; // 🔑 parlaq qızılı düymə
+           border: 2px solid #c3922e;
+           cursor: pointer;
+       }
+
+       // DOLU HİSSƏ (Firefox üçün sol tərəf)
+       &::-moz-range-progress {
+           background: #FFD700; // sol tərəfdə dolmuş hissə
+           height: 4px;
+       }
+   }
+
+}
+
+.box-still{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.238);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.small{
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.332);
+}
+
+.calc-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .calc-btn{
+        background-color: #f21a1a;
+        border: none;
+        padding: 10px 45px;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.total-box{
+    margin-top: 20px;
+    width: 100%;
+    height: 190px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-image: url('../img/calculated2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+    p{
+         color: rgb(0, 0, 0);
+         font-weight: 700;
+    }
+    span{
+        margin-left: 20px;
+         color: red;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+
+}
+
+.azman{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.who-box{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    p{
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.492);
+    }
+    // background-color: #eedf89;
+}
