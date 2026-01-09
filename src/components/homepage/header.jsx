@@ -1,13 +1,23 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import resim from "../../img/azmanat.png"
 import { useNavigate } from "react-router";
 import jingle from '../../img/jingle.mp3';
+import { useData } from "../../hook/hook";
 
 
 export function Header(){
-const navigate=useNavigate();
-  const audioRef = useRef(null);
 
+const{data}=useData();
+const navigate=useNavigate();
+const audioRef = useRef(null);
+useEffect(()=>{
+if (data) {
+   let number=data[0]?.mobil;
+   localStorage.setItem('number',JSON.stringify(number))
+   
+    
+}
+},[data])
   // useEffect(() => {
   //   const handleFirstClick = () => {
   //     audioRef.current?.play();

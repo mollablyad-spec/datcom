@@ -1,1 +1,1 @@
-export const baseurl='https://695cca2a79f2f34749d5ad9f.mockapi.io/magetta/'
+export const baseurl='https://68010f6c81c7e9fbcc4161c8.mockapi.io/mi/'

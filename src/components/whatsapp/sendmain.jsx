@@ -9,17 +9,16 @@ const{data,refetch}=useData();
 const [nomre, setnomre] = useState(null);    
 const{name,fincode,username,mobile}=JSON.parse(localStorage.getItem("information")) || {};;
 const{depozit,money,mounts,rates,ratmoney,resultat,totaals,cart}=JSON.parse(localStorage.getItem("person")) || {};;
+
+let number=JSON.parse(localStorage.getItem('number'));
 useEffect(()=>{
-    if (data) {
-        
-          
-        setnomre(data[0])
-    }
-},[data]);   
+if (number) {
+    setnomre(number)
+}
+},[number])
 
 
-
-  const phone = `${nomre?.mobil}`;
+  const phone = `${nomre}`;
   const message = 
   `Salam!
 
